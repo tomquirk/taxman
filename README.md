@@ -1,18 +1,22 @@
 # TAXMAN
-### A CSS-based auditor that __works__
+### A CSS-based auditor that is actually useful
+
+![](taxman.png)
 
 ## Usage
 
 ```
 from taxman import audit
+
 ...
-audit = Audit(BASE_DIR) # BASE_DIR is your websites base directory
-audit.run()
+
+my_audit = audit.Audit(BASE_DIR) # BASE_DIR is your websites base directory
+my_audit.run()
 ```
-Have fun deleting stuff
+Have fun!
 
 ## License
 MIT
 
 ## Author
-Me
+Tom Quirk
