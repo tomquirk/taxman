@@ -25,7 +25,7 @@ class Colour:
 
 class Audit(object):
     def __init__(self, basedir):
-        self._HTML_file_styles = {} # by file
+        self._HTML_file_styles = {}  # by file
         self._all_styles = {}   # by style
         self._css_file_styles = {}  # by file
         self._css_all_styles = {}  # by style
@@ -42,7 +42,6 @@ class Audit(object):
         :param fpath: str
         :return:
         """
-        fname = os.path.basename(fpath)
         self._HTML_file_styles[fpath] = []
         file = open(fpath).read()
         file_lines = file.split('\n')
@@ -144,7 +143,6 @@ class Audit(object):
         :param fpath: str
         :return:
         """
-        fname = os.path.basename(fpath)
         self._HTML_file_styles[fpath] = []
         file = open(fpath).read()
         file_lines = file.split('\n')
